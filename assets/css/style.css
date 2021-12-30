@@ -1,0 +1,56 @@
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+:root {
+    --post-it-yellow: #fcfca6;
+    --post-it-blue: #a3e8ff;
+    --post-it-green: #a7ffa4;
+    --post-it-pink: #ffa7e9;
+    --marker-red: #e20000;
+    --marker-green: #018316;
+    --marker-blue: #003699;
+    --marker-black: #000000;
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 36px;
+}
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 9999;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.post-it-blue {
+  width:200px;
+  height:200px;
+  background: var(--post-it-blue);
+  box-shadow:
+    inset 0 -25px 25px rgba(0,0,0,0.25),
+    inset 0 25px 10px rgba(0,0,0,0.25),
+    -8px 8px 15px 10px rgba(0,0,0,0.3);
+}
+
+.post-it-blue:hover {
+    border-radius:0 0 0 75px/100px;
+}
+
+.post-it-blue li {
+    flex: 2 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.post-it-blue li a {
+    color: var(--marker-black);
+    text-decoration: none;
+}
