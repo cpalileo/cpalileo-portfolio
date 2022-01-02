@@ -18,39 +18,111 @@ body {
 }
 
 header {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
+    top: 5px;
     z-index: 9999;
+}
+
+span {
+    line-height: 74px;
+    font-size:200px;
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    margin-left: 50px;
 }
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
 }
 
-.post-it-blue {
-  width:200px;
-  height:200px;
-  background: var(--post-it-blue);
-  box-shadow:
-    inset 0 -25px 25px rgba(0,0,0,0.25),
-    inset 0 25px 10px rgba(0,0,0,0.25),
-    -8px 8px 15px 10px rgba(0,0,0,0.3);
+header nav ul li {
+    display: flex;
+    flex-wrap: wrap;
+    width:200px;
+    height:200px;
+    margin-right: 50px;
+    justify-content: space-between;
+    cursor: pointer;
+    background: var(--post-it-blue);
+    box-shadow:
+      inset 0 -25px 25px rgba(0,0,0,0.25),
+      inset 0 25px 10px rgba(0,0,0,0.25),
+      -8px 8px 15px 10px rgba(0,0,0,0.3);  
 }
 
-.post-it-blue:hover {
-    border-radius:0 0 0 75px/100px;
-}
-
-.post-it-blue li {
-    flex: 2 100%;
-    text-align: center;
-    padding-top: 40px;
-}
-
-.post-it-blue li a {
+header nav ul li a {
+    display: flex;
     color: var(--marker-black);
     text-decoration: none;
+    text-align: center;
+    vertical-align: center;
+}
+
+.post-it-nav:hover {
+    border-radius: 0 0 0 75px/100px;
+}
+
+.post-it-nav-hide {
+    display: none;
+}
+
+.menu-trigger:active + .post-it-nav-hide {
+    display:block;
+}
+
+.break {
+    flex-basis: 100%;
+    width: 0;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.develop {
+    flex: 1
+}
+
+.team {
+    flex: 1
+}
+
+.design {
+    flex: 1
+}
+
+.portrait {
+    flex: 1
+}
+
+.coach {
+    flex: 1;
+    border-bottom: none;
 }
