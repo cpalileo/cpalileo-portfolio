@@ -1,3 +1,6 @@
+/*  Portfolio website is meant to resemble a white board.  Until Java Script is
+    incorporated into the code the website will likely not function as envisioned */ 
+
 @import "compass/css3";
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 
@@ -12,19 +15,34 @@
     --marker-black: #000000;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Permanent Marker', cursive;
     font-size: 36px;
+    height: 100%;
 }
 
 header {
+    padding: 20px 35px;
     background-color: white;
+    background-image: url("../images/whiteboard.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     position: sticky;
     position: -webkit-sticky;
-    top: 5px;
+    top: 0;
     z-index: 9999;
+}
+
+header p {
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 span {
@@ -35,7 +53,10 @@ span {
 
 header nav {
     display: flex;
-    margin-left: 50px;
+    justify-content: space-around;
+    margin-top: 1px;
+    margin-left: 10%;
+    padding-left: 0px;
 }
 
 header nav ul {
@@ -48,8 +69,8 @@ header nav ul {
 header nav ul li {
     display: flex;
     flex-wrap: wrap;
-    width:200px;
-    height:200px;
+    width: 175px;
+    height: 175px;
     margin-right: 50px;
     justify-content: space-between;
     cursor: pointer;
@@ -66,6 +87,23 @@ header nav ul li a {
     text-decoration: none;
     text-align: center;
     vertical-align: center;
+}
+
+footer {
+    display: flex;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+.bg {
+    background-image: url("../images/whiteboard.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .post-it-nav:hover {
@@ -86,43 +124,77 @@ header nav ul li a {
 }
 
 .hero {
+    text-align: center;
+}
+
+.hero-sketches {
+    width: 300px;
+    height: 300px;
+}
+
+.hero-top-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-.hero-top {
+.hero-bottom-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-.hero-bottom {
+.skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-.develop {
-    flex: 1
+.skills h2 {
+    text-align: center;
 }
 
-.team {
-    flex: 1
+.lang {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.design {
-    flex: 1
+.tools {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.portrait {
-    flex: 1
+.recent-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px 0 50px;
 }
 
-.coach {
-    flex: 1;
-    border-bottom: none;
+.recent-projects h2 {
+    text-align: center;
+}
+
+.past-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px 0 50px;
+}
+
+.past-projects h2 {
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h2 {
+    text-align: centers;
 }
