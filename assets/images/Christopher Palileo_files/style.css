@@ -83,7 +83,6 @@ header nav ul li {
 
 header nav ul li a {
     display: flex;
-    color: var(--marker-black);
     text-decoration: none;
     text-align: center;
     vertical-align: center;
