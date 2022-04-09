@@ -54,8 +54,8 @@ footer h2 {
   text-align: center;
 }
 
-/* Animated menu declarations start here */
-#menu {
+/* Animated postItMenu declarations start here */
+#postItMenu {
   width: 10%;
   height: 20%;
   position: absolute;
@@ -67,7 +67,7 @@ footer h2 {
   transform: rotate(-10deg);
 }
 
-.menu-button {
+.postItMenu-button {
   opacity: 0;
   z-index: -1;
   width: 250px;
@@ -92,20 +92,20 @@ footer h2 {
     inset 0 25px 10px rgba(0, 0, 0, 0.25), -8px 8px 15px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* pseudo elements that trigger the menu */
-#menu:not(:target) > a:first-of-type,
-#menu:target > a:last-of-type {
+/* pseudo elements that trigger the postItMenu */
+#postItMenu:not(:target) > a:first-of-type,
+#postItMenu:target > a:last-of-type {
   opacity: 1;
   z-index: 1;
 }
 
-#menu:not(:target) > .icon-open:before,
-#menu:target > .icon-close:before {
+#postItMenu:not(:target) > .icon-open:before,
+#postItMenu:target > .icon-close:before {
   opacity: 1;
 }
 
-/* menu sticky notes start here */
-.menu-item {
+/* postItMenu sticky notes start here */
+.postItMenu-item {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -123,11 +123,11 @@ footer h2 {
 }
 
 /* sticky note peeling effect when hover */
-.menu-item:hover {
+.postItMenu-item:hover {
   border-radius: 0 0 0 75px/100px;
 }
 
-.menu-item a {
+.postItMenu-item a {
   color: var(--marker-black);
   position: relative;
   left: 0;
@@ -135,25 +135,25 @@ footer h2 {
 }
 
 /* 4th sticky note */
-#menu:target > .menu-item:nth-child(6) {
+#postItMenu:target > .postItMenu-item:nth-child(6) {
   transform: rotate(-42deg) translateY(2vh) rotate(-308deg) translateX(70vw);
   transition-delay: 0s;
 }
 
 /* 3rd sticky note */
-#menu:target > .menu-item:nth-child(5) {
+#postItMenu:target > .postItMenu-item:nth-child(5) {
   transform: rotate(-20deg) translateY(12vh) rotate(22deg) translateX(50vw);
   transition-delay: 0.1s;
 }
 
 /* 2nd sticky note */
-#menu:target > .menu-item:nth-child(3) {
+#postItMenu:target > .postItMenu-item:nth-child(3) {
   transform: rotate(0deg) translateY(0vh) rotate(10deg) translateX(35vw);
   transition-delay: 0.2s;
 }
 
 /* 1st sticky note */
-#menu:target > .menu-item:nth-child(4) {
+#postItMenu:target > .postItMenu-item:nth-child(4) {
   transform: rotate(60deg) translateY(10vh) rotate(-60deg) translateX(20vw);
   transition-delay: 0.3s;
 }
@@ -182,7 +182,7 @@ footer h2 {
   transform: rotate(2deg);
 }
 
-.container {
+.postItBlock {
   width: 960px;
   margin: 0 auto;
   padding: 10px 25px;
@@ -466,12 +466,12 @@ footer h2 {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 1199px) {
-  #menu {
+  #postItMenu {
     left: 15%;
     top: 15%;
   }
 
-  .menu-button {
+  .postItMenu-button {
     width: 350px;
     height: 300px;
   }

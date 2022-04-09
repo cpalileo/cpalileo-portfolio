@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/> <!-- Do I need this space /> , syntax for XTML? -->
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Christopher Palileo</title>
 </head>
@@ -13,89 +14,97 @@
 <div class="border-frame"></div>
 <image class="img-marker" src="./assets/images/marker.png" alt="marker image">
 
-    <!-- <header> -->
-        <div class="container">
-            <ul id="menu">
-                <a href="#menu" class="menu-button icon-open" title="Show Nav">Menu</a>
-                <a href="#0" class="menu-button icon-close" title="Show Nav">Remove Stickies</a>
-                <li class="menu-item">
+    <!-- Post-It Note Menu -->
+        <div class="postItBlock">
+            <ul id="postItMenu">
+                <a href="#postItMenu" class="postItMenu-button icon-open" title="Show Nav">Menu</a>
+                <a href="#0" class="postItMenu-button icon-close" title="Show Nav">Remove Stickies</a>
+                <li class="postItMenu-item">
                     <a href="#recent-projects">
-                        <span class="fab fa-github">Recent Projects</span>
+                        <span class="fab fa-github">Projects</span>
                     </a>
                 </li>
-                <li class="menu-item">
+                <li class="postItMenu-item">
                     <a href="#skills">
                         <span class="fab fa-linkedin">Skills</span>
                     </a>
                 </li>
-                <li class="menu-item">
-                    <a href="#past-projects">
-                        <span class="fab fa-instagram">Past Project</span>
+                <li class="postItMenu-item">
+                    <a href="#contact">
+                        <span class="fab fa-instagram">Contact</span>
                     </a>
                 </li>
-                <li class="menu-item">
-                    <a href="#contact">
-                        <span class="fab fa-twitter">Contact</span>
+                <li class="postItMenu-item">
+                    <a href="#links">
+                        <span class="fab fa-twitter">Links</span>
                     </a>
                 </li>        
             </ul>
         </div>
-    <!-- </header> -->
+    <!-- Post-It Note Menu -->
 
-    <section class="hero">
-        <div class="hero-container">
-            <div class="develop-img">
+    <section class="container">
+        <div class="row">
+            <div class="col">
                 <img class="hero-sketches" src="./assets/images/develop.jpg" alt="sketch of computer code"></a>
             </div>
-            <div class="portrait">
+
+            <div class="col-6">
                 <img class="hero-sketches" src="./assets/images/portrait.jpg" alt="self sketch"></a>
             </div>
-            <div class="coach-img">
+            <div class="col">
                 <img class="hero-sketches" src="./assets/images/coach.jpg"
                     alt="sketch of hand drawing steps for worker"></a>
             </div>
         </div>
-        <div>
+    <div>
             <h1>Christopher Palileo</h1>
         </div>
 
     </section>
 
+    <!-- Skills Section-->
     <section id="skills">
         <h2 class="rotate-neg2">Skills</h2>
         <div class="skills flex-wrap">
             <div class="lang">
                 <div>
-                    <h3 class="rotate-neg1">Languages</h3>
+                    <!-- <h3 class="rotate-neg1">Languages</h3> -->
                 </div>
                 <div>
                     <ul class="rotate-pos1">
                         <li>HTML</li>
                         <li>CSS</li>
+                        <li>Bootstrap</li>
                         <li>JavaScript</li>
+                        <li>jQuery</li>
                     </ul>
                 </div>
             </div>
             <div class="tools">
                 <div>
-                    <h3 class="rotate-neutral">Development Tools</h3>
+                    <!-- <h3 class="rotate-neutral">Development Tools</h3> -->
                 </div>
                 <div>
                     <ul class="rotate-pos2">
-                        <li>GIT</li>
-                        <li>VS Code</li>
-                    </ul>                </div>
+                        <li>Git</li>
+                        <li>Node JS</li>
+                        <li>Express.js</li>
+                        <li>SQL</li>
+                    </ul>                
+                </div>
             </div>
         </div>
     </section>
 
+    <!--Projects Section-->
     <section id="recent-projects" class="recent-projects flex-wrap">
         <div class="design-img">
             <img class="hero-sketches" src="./assets/images/design.jpg" alt="sketch of web design sketches"></a>
         </div>
         <div></div>
         <div>
-            <h2 class="rotate-pos1">Recent Projects</h2>
+            <h2 class="rotate-pos1">Projects</h2>
         </div>
         <div class="empty-third"></div>
         <div>
@@ -135,20 +144,9 @@
         </div>
     </section>
 
-    <section id="past-projects" class="past-projects flex-wrap">
-        <div>
-            <h2 class="rotate-neg1">Past Projects</h2>
-            <div>
-                <p>Coming Soon</p>
-            </div>
-        </div>
-    </section>
-    <div class="team-img">
-        <img class="hero-sketches" src="./assets/images/team.jpg" alt="sketch of teammates"></a>
-    </div>
-
 </body>
 
+<!--Contact Form-->
  <footer id="contact" class="contact">
     <div>
         <h2 class="rotate-neutral">Let's Chat About Collaborating</h2>
@@ -164,7 +162,8 @@
             </form>
             </div>
 
-          <div class="green-text">Let's connect on social media</div>
+<!--Connect on Social Media-->
+          <div id="links" class="green-text">Let's connect on social media</div>
           <div class="social-media">
             <div>
                 <a href="https://github.com/cpalileo">
