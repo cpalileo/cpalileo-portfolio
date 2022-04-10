@@ -69,7 +69,7 @@ footer h2 {
 
 .postItMenu-button {
   opacity: 0;
-  z-index: -1;
+  z-index: 2;
   width: 250px;
   height: 250px;
   position: absolute;
@@ -96,7 +96,7 @@ footer h2 {
 #postItMenu:not(:target) > a:first-of-type,
 #postItMenu:target > a:last-of-type {
   opacity: 1;
-  z-index: 1;
+  z-index: 3;
 }
 
 #postItMenu:not(:target) > .icon-open:before,
@@ -111,7 +111,7 @@ footer h2 {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.5s;
-  z-index: -2;
+  z-index: 1;
   transition: 0.5s;
   width: 175px;
   height: 175px;
@@ -187,6 +187,7 @@ footer h2 {
   margin: 0 auto;
   padding: 10px 25px;
   border: 1px solid white;
+  z-index: 4;
 }
 
 /* frame resembling whiteboard
@@ -229,8 +230,8 @@ footer h2 {
 .develop-img {
   height: 75%;
   margin-top: 6%;
-  transform: rotate(-7deg);
-  z-index: -2;
+  transform: rotate(-2deg);
+  z-index: 1;
 }
 
 .hero-container {
