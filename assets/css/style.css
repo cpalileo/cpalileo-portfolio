@@ -22,6 +22,7 @@
 }
 
 body {
+  height: 100%;
   font-family: "Permanent Marker", cursive;
   text-align: center;
   font-size: 2em;
@@ -53,6 +54,59 @@ footer {
 footer h2 {
   text-align: center;
 }
+
+/* frame resembling whiteboard */
+
+.websiteFrame {
+  position: fixed;
+  bottom: 0;
+  z-index: 990;
+  box-shadow: 
+  inset #5f5f5f 0 0 0 5px, inset #808080 0 0 0 1px,
+  inset #9c9c9c 0 0 0 10px, inset #acacac 0 0 0 11px, inset #7a7a7a 0 0 0 16px,
+  inset #949494 0 0 0 17px, inset #b9b9b9 0 0 0 22px, inset #cacaca 0 0 0 23px;
+}
+
+#websiteFrameTop {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+}
+
+#websiteFrameRight {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 25px;
+}
+
+#websiteFrameBottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+}
+
+#websiteFrameLeft {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 25px;
+}
+
+/* .border-frame {
+  bottom: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  box-shadow: 
+    inset #5f5f5f 0 0 0 5px, inset #808080 0 0 0 1px,
+    inset #9c9c9c 0 0 0 10px, inset #acacac 0 0 0 11px, inset #7a7a7a 0 0 0 16px,
+    inset #949494 0 0 0 17px, inset #b9b9b9 0 0 0 22px, inset #cacaca 0 0 0 23px;
+} */
+
 
 /* Animated postItMenu declarations start here */
 #postItMenu {
@@ -190,25 +244,13 @@ footer h2 {
   z-index: 4;
 }
 
-/* frame resembling whiteboard
-.border-frame {
-  bottom: 0;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: -2;
-  box-shadow: inset #5f5f5f 0 0 0 5px, inset #808080 0 0 0 1px,
-    inset #9c9c9c 0 0 0 10px, inset #acacac 0 0 0 11px, inset #7a7a7a 0 0 0 16px,
-    inset #949494 0 0 0 17px, inset #b9b9b9 0 0 0 22px, inset #cacaca 0 0 0 23px;
-} */
-
 /* marker at the bottom of the page */
 .img-marker {
   position: fixed;
   width: 200px;
   height: 30px; /* adjust height to raise and lower position on page */
   object-fit: cover;
-  bottom: 0;
+  bottom: 2vh;
   right: 500px;
   z-index: 1;
 }
@@ -247,9 +289,10 @@ footer h2 {
 }
 
 .skills {
-  justify-content: space-around;
+  justify-content:space-evenly;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  width: 100%;
 }
 
 #skills h2 {
@@ -366,6 +409,10 @@ footer h2 {
 
 .past-projects h2 {
   text-align: center;
+}
+
+.sticky-caption {
+  font-size: 0.8em;
 }
 
 /* REACH OUT STYLES START */
@@ -487,8 +534,7 @@ footer h2 {
   }
 
   .skills {
-    width: 800px;
-    justify-content: space-between;
+
   }
 
   .tools {
@@ -504,7 +550,7 @@ footer h2 {
   }
 }
 
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
+/* MEDIA QUERY FOR TABLETS AND SMALLER
 @media screen and (max-width: 768px) {
   body {
     font-size: 5em;
@@ -519,11 +565,11 @@ footer h2 {
     inline-size: 250px;
     overflow-wrap: break-word;
   }
-}
+} */
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
+/* @media screen and (max-width: 575px) {
   body {
     font-size: 6em;
   }
-}
+} */
