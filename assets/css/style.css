@@ -301,10 +301,12 @@ footer h2 {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  width: 135%;
 }
 
 .post-it-proj {
-  width: 250px;
+  font-size: 1.5vh;
+  width: 500px;
   height: 175px;
   margin: 0 100px;
   padding-top: 45px;
@@ -335,13 +337,8 @@ footer h2 {
   background-color: var(--post-it-pink);
 }
 
-.post-it-proj .post-it-proj1 {
-}
-
-.post-it-proj .post-it-proj2 {
-}
-
-.post-it-proj .post-it-proj3 {
+.post-it-proj4 {
+  background-color: var(--post-it-blue);
 }
 
 .sticky-img {
@@ -418,7 +415,7 @@ footer h2 {
   border: 1px solid var(--marker-black);
   display: block;
   padding: 7px 15px;
-  font-size: 2em;
+  font-size: 1em;
   color: var(--marker-black);
   width: 100%;
   margin-bottom: 15px;
