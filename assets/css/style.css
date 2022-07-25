@@ -255,6 +255,10 @@ footer h2 {
   z-index: 1;
 }
 
+.row {
+  
+}
+
 .break {
   border-color: var(--marker-black);
 }
